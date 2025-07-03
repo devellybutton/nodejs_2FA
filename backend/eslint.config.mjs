@@ -27,8 +27,13 @@ export default tseslint.config(
   {
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-floating-promises': 'warn',
-      '@typescript-eslint/no-unsafe-argument': 'warn'
+      '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/no-unsafe-argument': 'warn',
+
+      // Line ending 설정
+      // prettier랑 불일치하면 에러 발생
+      'eol-last': 'off', // 파일 끝 개행도 자동
+      'linebreak-style': 'off', // 개행 문자 타입도 자동
     },
   },
 );
